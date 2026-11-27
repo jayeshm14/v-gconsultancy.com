@@ -353,17 +353,23 @@ export default function HomePage() {
               <p className="section-subtitle">{homeContent.clientsSection.subheading}</p>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-5">
               {homeContent.clientsSection.slots.map((slot) => (
                 <div
                   key={slot.id}
-                  className="h-24 rounded-2xl border border-dashed border-slate-300 bg-brand-light/70 px-4 flex flex-col items-center justify-center text-center"
+                  title={slot.label}
+                  className={`w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.85rem)] lg:w-[calc(25%-0.95rem)] xl:w-[calc(16.666%-1.05rem)] h-28 rounded-2xl px-5 py-4 flex flex-col items-center justify-center text-center transition-all ${
+                    slot.logo
+                      ? "border border-slate-200 bg-white shadow-sm hover:border-brand-bronze/60 hover:shadow-md"
+                      : "border border-dashed border-slate-300 bg-brand-light/70"
+                  }`}
                 >
                   {slot.logo ? (
                     <img
                       src={slot.logo}
                       alt={slot.label}
-                      className="max-h-12 w-auto object-contain"
+                      loading="lazy"
+                      className="max-h-14 max-w-full w-auto object-contain"
                     />
                   ) : (
                     <>
