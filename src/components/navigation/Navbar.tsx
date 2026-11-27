@@ -70,21 +70,21 @@ export function Navbar() {
               <img
                 src="/images/logo.png"
                 alt="VG Consultancy logo"
-                width={58}
-                height={30}
+                width={54}
+                height={28}
                 className="h-8 w-auto object-contain"
               />
-              <span className="font-display font-extrabold text-brand-gold tracking-tight text-base sm:text-lg whitespace-nowrap leading-none">
+              <span className="font-display font-extrabold text-brand-gold tracking-tight text-lg whitespace-nowrap leading-none">
                 Consultancy
               </span>
             </span>
-            <span className="text-[10px] sm:text-[11px] font-medium text-slate-300 tracking-wide leading-tight mt-0.5 whitespace-nowrap">
+            <span className="text-xs font-medium text-slate-300 tracking-wide leading-tight mt-1 whitespace-nowrap">
               Virtual Growth Private Limited
             </span>
           </Link>
 
           {/* Desktop navigation (1024px+) */}
-          <nav aria-label="Primary navigation" className="hidden lg:flex items-center gap-3 xl:gap-5">
+          <nav aria-label="Primary navigation" className="hidden lg:flex items-center gap-2.5 xl:gap-5">
             {navConfig.primary.map((item) => {
               if (item.items && item.items.length > 0) {
                 const isOpen = openDesktopDropdown === item.label;

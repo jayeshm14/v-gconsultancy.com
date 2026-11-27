@@ -27,5 +27,5 @@
 | Fabricated milestone years (`2018`, `2020`, `2022`, `2024`) from prior scaffold | Removed — only `2016` establishment stated |
 | Social URLs (`href="#"` in mirror) | Removed dead `#` links; documented as pending owner URLs |
 | Phone number & street address | Omitted — documented as pending owner confirmation |
-| Client names, logos, testimonials, ratings | None fabricated; `/case-studies/` explicitly states confidentiality/unpublished status |
+| Client names, logos, testimonials, ratings | None fabricated; homepage Our Clients section uses explicit `Logo Pending` sector slots awaiting owner-provided logos; `/case-studies/` explicitly states confidentiality status |
 | Service/Industry use cases | Explicitly labeled as illustrative operational scenarios |

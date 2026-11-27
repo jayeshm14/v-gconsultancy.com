@@ -344,6 +344,43 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* OUR CLIENTS SECTION */}
+        <section aria-label="Our Clients" className="section bg-white border-b border-slate-100">
+          <div className="container">
+            <div className="section-heading">
+              <span className="section-kicker">{homeContent.clientsSection.kicker}</span>
+              <h2 className="section-title">{homeContent.clientsSection.heading}</h2>
+              <p className="section-subtitle">{homeContent.clientsSection.subheading}</p>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+              {homeContent.clientsSection.slots.map((slot) => (
+                <div
+                  key={slot.id}
+                  className="h-24 rounded-2xl border border-dashed border-slate-300 bg-brand-light/70 px-4 flex flex-col items-center justify-center text-center"
+                >
+                  {slot.logo ? (
+                    <img
+                      src={slot.logo}
+                      alt={slot.label}
+                      className="max-h-12 w-auto object-contain"
+                    />
+                  ) : (
+                    <>
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-brand-bronze-text mb-1">
+                        Logo Pending
+                      </span>
+                      <span className="text-xs font-medium text-brand-muted leading-tight">
+                        {slot.label}
+                      </span>
+                    </>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* WHY VG CONSULTANCY */}
         <section className="section bg-brand-light">
           <div className="container">

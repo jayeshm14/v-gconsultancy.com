@@ -298,6 +298,20 @@ export const homeContent = {
     { id: "feedback", value: "99%", label: "Positive Feedback" },
     { id: "coffee", value: "250+", label: "Cups of Coffee" },
   ],
+  clientsSection: {
+    kicker: "OUR CLIENTS",
+    heading: "Trusted by Growing & Enterprise Organizations",
+    subheading:
+      "Supporting technology, healthcare, financial, manufacturing, retail, and professional services teams across India and global markets. Approved client logos will be published here.",
+    slots: [
+      { id: "client-1", label: "Enterprise Technology Partner", logo: null as string | null },
+      { id: "client-2", label: "Healthcare & Life Sciences", logo: null as string | null },
+      { id: "client-3", label: "Banking & Financial Services", logo: null as string | null },
+      { id: "client-4", label: "Manufacturing & Industrial", logo: null as string | null },
+      { id: "client-5", label: "Retail & E-Commerce", logo: null as string | null },
+      { id: "client-6", label: "Professional Services", logo: null as string | null },
+    ],
+  },
   whyHeading: "Why VG Consultancy",
   whySubheading:
     "Built on engineering rigor, transparent delivery, and technology aligned directly to commercial goals.",
