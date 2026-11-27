@@ -240,6 +240,7 @@ export default function ConsultationForm() {
             <option value="ai-automation">AI & Intelligent Automation</option>
             <option value="ai-agents">AI Agents & AI Assistants</option>
             <option value="software-development">Software & Product Engineering</option>
+            <option value="quality-assurance">Quality Assurance & Test Automation</option>
             <option value="web-ecommerce">Enterprise Websites & E-Commerce</option>
             <option value="saas-development">Custom SaaS Platform</option>
             <option value="crm-erp">CRM, ERP & Integrations</option>

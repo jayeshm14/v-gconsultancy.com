@@ -10,7 +10,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "Technology, AI & Engineering Services",
   description:
-    "Explore VG Consultancy's 14 core capabilities across AI automation, AI agents, custom software, SaaS, CRM/ERP, cloud modernization, IT consulting, and staffing.",
+    "Explore VG Consultancy's 15 core capabilities across AI automation, software engineering, quality assurance, SaaS, CRM/ERP, cloud modernization, IT consulting, and staffing.",
   path: "/services/",
 });
 

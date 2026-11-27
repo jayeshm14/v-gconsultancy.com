@@ -17,6 +17,7 @@ import {
   ArrowRight,
   CheckCircle2,
   ShieldCheck,
+  MessageCircle,
   Smile,
   FolderCheck,
   ThumbsUp,
@@ -55,6 +56,8 @@ const whyIcons: Record<string, LucideIcon> = {
   "Flexible Engagement Models": Handshake,
   "Technology Expertise": Brain,
   "Long-Term Partnerships": Users,
+  "Security & Reliability by Design": ShieldCheck,
+  "Clear, Collaborative Delivery": MessageCircle,
 };
 
 const statIcons: Record<string, LucideIcon> = {

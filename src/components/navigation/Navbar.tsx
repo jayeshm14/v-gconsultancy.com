@@ -112,13 +112,13 @@ export function Navbar() {
                       <div
                         id={menuId}
                         role="menu"
-                        className="absolute left-0 mt-2 w-72 max-h-[75vh] overflow-y-auto rounded-xl border border-slate-200 bg-white p-2 shadow-2xl z-50 text-brand-ink"
+                        className="absolute left-0 mt-2 w-80 whitespace-nowrap rounded-xl border border-slate-200 bg-white p-2 shadow-2xl z-50 text-brand-ink"
                       >
                         <Link
                           href={item.href}
                           role="menuitem"
                           onClick={closeAll}
-                          className="block px-3 py-2 text-xs font-extrabold uppercase tracking-wider text-brand-bronze-text border-b border-slate-100 mb-1 hover:bg-brand-light rounded-lg"
+                          className="block whitespace-nowrap px-3 py-2 text-xs font-extrabold uppercase tracking-wider text-brand-bronze-text border-b border-slate-100 mb-1 hover:bg-brand-light rounded-lg"
                         >
                           All {item.label} &rarr;
                         </Link>
@@ -128,7 +128,7 @@ export function Navbar() {
                             href={sub.href}
                             role="menuitem"
                             onClick={closeAll}
-                            className="block px-3 py-2 text-sm font-medium text-brand-ink hover:bg-brand-light hover:text-brand-bronze-text rounded-lg transition-colors"
+                            className="block whitespace-nowrap px-3 py-2 text-sm font-medium text-brand-ink hover:bg-brand-light hover:text-brand-bronze-text rounded-lg transition-colors"
                           >
                             {sub.label}
                           </Link>

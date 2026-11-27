@@ -94,7 +94,9 @@ export const navConfig: {
         { label: "AI & Intelligent Automation", href: "/services/ai-automation/" },
         { label: "AI Agents & AI Assistants", href: "/services/ai-agents-assistants/" },
         { label: "Software & Product Engineering", href: "/services/software-development/" },
+        { label: "Quality Assurance & Test Automation", href: "/services/quality-assurance/" },
         { label: "Enterprise Websites & E-Commerce", href: "/services/web-ecommerce/" },
+        { label: "Enterprise Applications", href: "/services/enterprise-solutions/" },
         { label: "SaaS Development", href: "/services/saas-development/" },
         { label: "CRM & ERP Solutions", href: "/services/crm-erp/" },
         { label: "Business Process Automation", href: "/services/business-integrations/" },
@@ -165,6 +167,7 @@ export const footerConfig = {
         { label: "AI & Intelligent Automation", href: "/services/ai-automation/" },
         { label: "AI Agents & AI Assistants", href: "/services/ai-agents-assistants/" },
         { label: "Software & Product Engineering", href: "/services/software-development/" },
+        { label: "Quality Assurance & Test Automation", href: "/services/quality-assurance/" },
         { label: "Enterprise Applications", href: "/services/enterprise-solutions/" },
         { label: "SaaS Development", href: "/services/saas-development/" },
         { label: "CRM & ERP Solutions", href: "/services/crm-erp/" },
@@ -357,6 +360,16 @@ export const homeContent = {
       description:
         "Collaborative relationships focused on post-launch evolution, continuous improvement, and enduring client trust.",
     },
+    {
+      title: "Security & Reliability by Design",
+      description:
+        "Security, access boundaries, input validation, and operational resilience are considered throughout solution design and delivery.",
+    },
+    {
+      title: "Clear, Collaborative Delivery",
+      description:
+        "Shared priorities, regular communication, and iterative feedback help keep delivery aligned with your team's needs.",
+    },
   ],
   techHeading: "Technology Capabilities",
   techSubheading:
@@ -391,6 +404,12 @@ export const homeContent = {
       description:
         "Customer self-service portals, employee collaboration hubs, and mobile applications engineered for accessibility and reliability.",
       items: ["Customer Portals", "Employee Portals", "iOS & Android Apps", "Accessible UX"],
+    },
+    {
+      title: "Security & Quality Engineering",
+      description:
+        "Security-conscious engineering across application access, API design, automated testing, and production observability.",
+      items: ["Access Controls", "Secure API Design", "Automated Testing", "Observability"],
     },
   ],
   industriesHeading: "Industries We Serve",
@@ -1555,6 +1574,79 @@ export const serviceRoutes: ServiceRouteData[] = [
       },
     ],
     cta: "Explore Dedicated Teams",
+  },
+  {
+    id: "quality-assurance",
+    path: "/services/quality-assurance/",
+    title: "Quality Assurance & Test Automation Services",
+    description:
+      "Software quality assurance, functional testing, API validation, and test automation to support reliable releases.",
+    h1: "Quality Assurance & Test Automation",
+    intro:
+      "We help teams improve release confidence with structured test planning, functional and regression testing, API validation, and automated checks integrated into delivery workflows.",
+    challenges: [
+      "Defects reaching production because critical user journeys lack test coverage",
+      "Manual regression cycles slowing down frequent releases",
+      "Inconsistent acceptance criteria across product and engineering teams",
+      "Limited visibility into quality risks and release readiness",
+    ],
+    capabilities: [
+      "Risk-based test planning and acceptance criteria definition",
+      "Functional, regression, cross-browser, and API testing",
+      "Automated checks for critical application workflows",
+      "Defect triage and clear release-readiness reporting",
+    ],
+    descriptions: [
+      {
+        title: "Test Strategy & Coverage",
+        body: "We identify high-impact workflows, define practical test coverage, and align validation activities with product requirements and release risks.",
+      },
+      {
+        title: "Automation & Delivery Integration",
+        body: "We implement maintainable automated checks and integrate them into development workflows so teams can catch regressions earlier.",
+      },
+    ],
+    useCases: [
+      "Illustrative scenario: Establishing regression coverage for a growing SaaS product",
+      "Illustrative scenario: Validating API contracts across integrated business systems",
+      "Illustrative scenario: Testing cross-browser behavior for a customer-facing website",
+      "Illustrative scenario: Creating release-readiness checks for an enterprise application",
+    ],
+    techApproach: [
+      "Risk-Based Test Planning",
+      "API & Integration Testing",
+      "Browser Automation",
+      "Continuous Integration Checks",
+      "Defect Tracking & Reporting",
+    ],
+    methodology: [
+      "Review product requirements and map critical user journeys",
+      "Prioritize test coverage by business and technical risk",
+      "Run functional tests and automate repeatable checks",
+      "Report findings and refine coverage with each release",
+    ],
+    benefits: [
+      "Earlier visibility into functional and integration defects",
+      "More repeatable validation across release cycles",
+      "Clearer communication of quality risks and readiness",
+      "Reduced reliance on repetitive manual regression checks",
+    ],
+    relatedServices: [
+      { label: "Software & Product Engineering", href: "/services/software-development/" },
+      { label: "Enterprise Applications", href: "/services/enterprise-solutions/" },
+      { label: "Project Outsourcing", href: "/services/project-outsourcing/" },
+    ],
+    faqs: [
+      {
+        q: "Can you work with our existing development team?",
+        a: "Yes. Quality assurance activities can be aligned with your existing team, tools, requirements, and release process.",
+      },
+      {
+        q: "Do you provide both manual and automated testing?",
+        a: "Testing is selected according to the product and risk profile. This can include exploratory and functional checks alongside automation for repeatable workflows.",
+      },
+    ],
+    cta: "Discuss Quality Assurance",
   },
 ];
 
