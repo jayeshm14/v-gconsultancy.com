@@ -16,7 +16,7 @@ Configure environment variables per [ENVIRONMENT_VARIABLES.md](file:///e:/Projec
 
 ## 2. Cloudflare Pages Deployment (Configured)
 
-This repository includes `wrangler.jsonc` (`account_id: 899dabdbc832953085048440677fe2a9`), `scripts/build-cloudflare.mjs`, `public/_redirects`, `public/_headers`, and `functions/api/[[route]].ts` for Cloudflare Pages + Pages Functions:
+This repository includes `wrangler.jsonc`, `scripts/build-cloudflare.mjs`, `public/_redirects`, `public/_headers`, and `functions/api/[[route]].ts` for Cloudflare Pages + Pages Functions (`CLOUDFLARE_ACCOUNT_ID=899dabdbc832953085048440677fe2a9`):
 
 ```bash
 # 1. Build static output into ./out (automatically preserves src/app/api for Node.js)
