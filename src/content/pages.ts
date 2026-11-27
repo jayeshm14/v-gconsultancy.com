@@ -15,6 +15,7 @@
 
 export const siteConfig = {
   name: "VG Consultancy",
+  legalName: "Virtual Growth Private Limited",
   domain: "https://v-gconsultancy.com",
   established: 2016,
   tagline: "Engineering Intelligence. Enabling Growth.",
@@ -291,6 +292,12 @@ export const homeContent = {
     "Established in 2016, VG Consultancy delivers intelligent technology, digital engineering, and specialized talent solutions for organizations across India and global markets. We combine software engineering discipline, enterprise architecture, and strategic IT consulting—alongside recruitment, staffing, and dedicated project outsourcing—to help businesses modernize operations and build future-ready capabilities.",
   aboutLinkText: "Discover Our Story",
   aboutLinkHref: "/about/",
+  stats: [
+    { id: "clients", value: "150+", label: "Happy Clients" },
+    { id: "projects", value: "130+", label: "Projects Completed" },
+    { id: "feedback", value: "99%", label: "Positive Feedback" },
+    { id: "coffee", value: "250+", label: "Cups of Coffee" },
+  ],
   whyHeading: "Why VG Consultancy",
   whySubheading:
     "Built on engineering rigor, transparent delivery, and technology aligned directly to commercial goals.",

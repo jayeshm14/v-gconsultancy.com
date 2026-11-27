@@ -63,18 +63,23 @@ export function Navbar() {
           <Link
             href="/"
             onClick={closeAll}
-            className="flex items-center gap-2.5 shrink-0 focus-visible:ring-2 focus-visible:ring-brand-gold rounded-lg py-1"
-            aria-label="VG Consultancy home"
+            className="inline-flex flex-col items-start shrink-0 focus-visible:ring-2 focus-visible:ring-brand-gold rounded-lg py-1"
+            aria-label="VG Consultancy — Virtual Growth Private Limited home"
           >
-            <img
-              src="/images/logo.png"
-              alt="VG Consultancy logo"
-              width={58}
-              height={30}
-              className="h-9 w-auto object-contain"
-            />
-            <span className="font-display font-extrabold text-brand-gold tracking-tight text-base sm:text-lg whitespace-nowrap">
-              Consultancy
+            <span className="flex items-center gap-2.5">
+              <img
+                src="/images/logo.png"
+                alt="VG Consultancy logo"
+                width={58}
+                height={30}
+                className="h-8 w-auto object-contain"
+              />
+              <span className="font-display font-extrabold text-brand-gold tracking-tight text-base sm:text-lg whitespace-nowrap leading-none">
+                Consultancy
+              </span>
+            </span>
+            <span className="text-[10px] sm:text-[11px] font-medium text-slate-300 tracking-wide leading-tight mt-0.5 whitespace-nowrap">
+              Virtual Growth Private Limited
             </span>
           </Link>
 

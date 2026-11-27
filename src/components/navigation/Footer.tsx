@@ -13,18 +13,23 @@ export function Footer() {
           <div className="lg:col-span-4">
             <Link
               href="/"
-              className="inline-flex items-center gap-2.5 mb-4"
-              aria-label="VG Consultancy home"
+              className="inline-flex flex-col items-start mb-4"
+              aria-label="VG Consultancy — Virtual Growth Private Limited home"
             >
-              <img
-                src="/images/logo.png"
-                alt="VG Consultancy logo"
-                width={54}
-                height={28}
-                className="h-8 w-auto object-contain"
-              />
-              <span className="font-display font-extrabold text-brand-gold tracking-tight text-lg">
-                Consultancy
+              <span className="flex items-center gap-2.5">
+                <img
+                  src="/images/logo.png"
+                  alt="VG Consultancy logo"
+                  width={54}
+                  height={28}
+                  className="h-8 w-auto object-contain"
+                />
+                <span className="font-display font-extrabold text-brand-gold tracking-tight text-lg leading-none">
+                  Consultancy
+                </span>
+              </span>
+              <span className="text-xs font-medium text-slate-300 tracking-wide mt-1">
+                Virtual Growth Private Limited
               </span>
             </Link>
             <p className="text-brand-gold text-xs font-bold uppercase tracking-wider mb-3">

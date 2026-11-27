@@ -17,6 +17,10 @@ import {
   ArrowRight,
   CheckCircle2,
   ShieldCheck,
+  Smile,
+  FolderCheck,
+  ThumbsUp,
+  Coffee,
   type LucideIcon,
 } from "lucide-react";
 import { Navbar } from "@/components/navigation/Navbar";
@@ -51,6 +55,13 @@ const whyIcons: Record<string, LucideIcon> = {
   "Flexible Engagement Models": Handshake,
   "Technology Expertise": Brain,
   "Long-Term Partnerships": Users,
+};
+
+const statIcons: Record<string, LucideIcon> = {
+  clients: Smile,
+  projects: FolderCheck,
+  feedback: ThumbsUp,
+  coffee: Coffee,
 };
 
 export default function HomePage() {
@@ -259,8 +270,11 @@ export default function HomePage() {
                     alt="VG Consultancy emblem"
                     width={88}
                     height={45}
-                    className="h-11 w-auto mb-6 object-contain"
+                    className="h-11 w-auto mb-2 object-contain"
                   />
+                  <p className="text-slate-200 text-xs font-semibold tracking-wide mb-6">
+                    Virtual Growth Private Limited
+                  </p>
                   <p className="text-brand-gold text-xs font-extrabold uppercase tracking-widest mb-2">
                     ESTABLISHED 2016
                   </p>
@@ -303,6 +317,29 @@ export default function HomePage() {
                   </Button>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* STATISTICS SECTION */}
+        <section aria-label="Company highlights and statistics" className="bg-gradient-dark text-white py-14 border-y border-brand-gold/25">
+          <div className="container">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+              {homeContent.stats.map((stat) => {
+                const Icon = statIcons[stat.id] || Award;
+                return (
+                  <div
+                    key={stat.id}
+                    className="rounded-2xl border border-white/10 bg-white/5 p-6 flex flex-col items-center"
+                  >
+                    <Icon size={26} className="text-brand-gold mb-3" aria-hidden="true" />
+                    <p className="font-display text-3xl sm:text-4xl font-extrabold text-brand-gold mb-1">
+                      {stat.value}
+                    </p>
+                    <p className="text-brand-dark-muted text-sm font-medium">{stat.label}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>

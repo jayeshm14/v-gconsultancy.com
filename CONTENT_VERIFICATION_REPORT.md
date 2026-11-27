@@ -9,7 +9,7 @@
 
 | Fact | Source | Verification Status |
 |------|--------|---------------------|
-| Company Name: `VG Consultancy` | `mirror/index.html`, `mirror/about.html`, `mirror/service.html` | Verified & preserved |
+| Company Name: `VG Consultancy` (`Virtual Growth Private Limited`) | `mirror/index.html`, `mirror/about.html`, `mirror/service.html`, owner confirmation | Verified & preserved |
 | Domain: `https://v-gconsultancy.com/` | Live site & prompt | Verified & preserved |
 | Established Year: `2016` | Prompt & brand record | Verified & preserved |
 | Geographic Scope: India and global markets | `mirror/index.html` | Verified & preserved |
@@ -22,7 +22,7 @@
 
 | Item | Action Taken |
 |------|--------------|
-| Legacy stats (`150+ Happy Clients`, `130+ Projects Completed`, `99% Positive Feedback`, `250+ Cups of Coffee`) | Excluded — unverified claims |
+| Legacy stats (`150+ Happy Clients`, `130+ Projects Completed`, `99% Positive Feedback`, `250+ Cups of Coffee`) | Restored per explicit owner instruction (`2026-11-27`) |
 | Legacy `"Award-Winning Agency"` claim | Excluded — unverified claim |
 | Fabricated milestone years (`2018`, `2020`, `2022`, `2024`) from prior scaffold | Removed — only `2016` establishment stated |
 | Social URLs (`href="#"` in mirror) | Removed dead `#` links; documented as pending owner URLs |

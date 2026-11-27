@@ -62,6 +62,7 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "VG Consultancy",
+  legalName: "Virtual Growth Private Limited",
   url: SITE_URL,
   logo: `${SITE_URL}/images/logo.png`,
   foundingDate: "2016",
