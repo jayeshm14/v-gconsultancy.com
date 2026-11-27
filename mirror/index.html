@@ -1,0 +1,1166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VG Consultancy | Technology, AI & Talent Solutions</title>
+
+<link href="css/css_css2.bin__family_Inter_wght_400_500_600_700_800_d" rel="stylesheet">
+<link rel="stylesheet" href="css/css_all.min.css">
+
+<style>
+:root {
+    --gold: #DDA255;
+    --bronze: #B88A47;
+    --grey: #7B7B7B;
+    --gradient: linear-gradient(135deg,#DDA255 0%,#B88A47 35%,#7B7B7B 100%);
+    --dark: #101923;
+    --navy: #182638;
+    --light: #f7f8fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #242a32;
+    background: white;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+a { text-decoration: none; }
+
+/* NAVIGATION */
+
+header {
+    background: #101923;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(221,162,85,.35);
+}
+
+.navbar {
+    min-height: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    display: block;
+    width: 110px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.nav-links a {
+    color: #ddd;
+    font-size: 13px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+.nav-cta {
+    background: var(--gradient);
+    color: #171717;
+    padding: 13px 23px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.menu-btn {
+    display: none;
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 650px;
+    background:
+      radial-gradient(circle at 80% 30%,rgba(221,162,85,.18),transparent 30%),
+      radial-gradient(circle at 10% 90%,rgba(80,130,180,.15),transparent 35%),
+      linear-gradient(120deg,#101923,#1d3046);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    align-items: center;
+    gap: 35px;
+    padding: 80px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-label {
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.hero h1 {
+    font-size: clamp(38px,5vw,65px);
+    line-height: 1.14;
+    margin: 24px 0;
+    font-weight: 800;
+}
+
+.hero h1 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    color: #c5cbd3;
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 570px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.btn-primary {
+    background: var(--gradient);
+    color: #171717;
+    padding: 16px 25px;
+    border-radius: 35px;
+    font-weight: 800;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.btn-outline {
+    border: 1px solid var(--gold);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 35px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn-primary:hover,
+.btn-outline:hover {
+    transform: translateY(-5px);
+}
+
+/* AI VISUAL */
+
+.ai-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    position: relative;
+}
+
+.ai-core {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    background: radial-gradient(circle,#344c66,#101923);
+    border: 2px solid var(--gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 45px rgba(221,162,85,.35),
+                inset 0 0 35px rgba(221,162,85,.15);
+    animation: pulse 3s infinite alternate;
+}
+
+.ai-core i {
+    font-size: 90px;
+    color: var(--gold);
+}
+
+.ai-orbit {
+    position: absolute;
+    width: 310px;
+    height: 310px;
+    border: 1px dashed rgba(221,162,85,.65);
+    border-radius: 50%;
+    animation: rotate 20s linear infinite;
+}
+
+.ai-orbit:before,
+.ai-orbit:after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: var(--gold);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--gold);
+}
+
+.ai-orbit:before { top: 40px; left: 35px; }
+.ai-orbit:after { bottom: 35px; right: 40px; }
+
+.ai-floating {
+    position: absolute;
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(221,162,85,.4);
+    padding: 14px 18px;
+    border-radius: 12px;
+    color: white;
+    font-size: 13px;
+    animation: float 4s infinite ease-in-out;
+}
+
+.float-one { top: 40px; left: 0; }
+.float-two { bottom: 35px; right: 0; }
+
+@keyframes rotate {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    from { transform: scale(.95); }
+    to { transform: scale(1.05); }
+}
+
+@keyframes float {
+    50% { transform: translateY(-12px); }
+}
+
+/* TRUST BAR */
+
+.trust-bar {
+    background: var(--gradient);
+    padding: 20px 0;
+    color: #171717;
+}
+
+.trust-inner {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.trust-inner i { margin-right: 8px; }
+
+/* GENERAL HEADINGS */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-heading span {
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--bronze);
+    letter-spacing: 4px;
+}
+
+.section-heading h2 {
+    font-size: clamp(30px,4vw,43px);
+    margin: 17px 0;
+}
+
+.section-heading h2 em {
+    font-style: normal;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.section-heading p {
+    color: #777;
+    line-height: 1.9;
+    max-width: 740px;
+    margin: auto;
+    font-size: 15px;
+}
+
+/* SERVICES */
+
+.services {
+    padding: 100px 0;
+    background: var(--light);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+}
+
+.service-card {
+    background: white;
+    padding: 32px 27px;
+    border-radius: 18px;
+    border: 1px solid #eae6df;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.service-card:before {
+    content: "";
+    height: 4px;
+    width: 100%;
+    background: var(--gradient);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: .4s;
+}
+
+.service-card:hover:before { left: 0; }
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.09);
+    border-color: var(--gold);
+}
+
+.number {
+    color: #c7a36c;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.service-icon {
+    height: 65px;
+    width: 65px;
+    background: var(--gradient);
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    margin: 20px 0;
+    color: #202020;
+    transition: .4s;
+}
+
+.service-card:hover .service-icon {
+    transform: rotate(-8deg) scale(1.1);
+}
+
+.service-card h3 {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 13px;
+    line-height: 1.9;
+    color: #777;
+}
+
+.service-card a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #a87935;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+/* WHY US */
+
+.why {
+    padding: 100px 0;
+    background: white;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 22px;
+}
+
+.why-card {
+    padding: 30px;
+    background: #faf9f6;
+    border-radius: 16px;
+    border: 1px solid #eee8df;
+    transition: .3s;
+}
+
+.why-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--gold);
+}
+
+.why-card i {
+    font-size: 30px;
+    color: var(--bronze);
+    margin-bottom: 20px;
+}
+
+.why-card h3 {
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.why-card p {
+    font-size: 13px;
+    line-height: 1.9;
+    color: #777;
+}
+
+/* ABOUT HIGHLIGHT */
+
+.about {
+    padding: 90px 0;
+    background: #f5f5f4;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.about-image {
+    min-height: 360px;
+    border-radius: 22px;
+    background:
+      radial-gradient(circle at center,rgba(221,162,85,.3),transparent 45%),
+      linear-gradient(135deg,#172638,#101923);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-image i {
+    font-size: 120px;
+    color: var(--gold);
+    filter: drop-shadow(0 0 25px rgba(221,162,85,.3));
+}
+
+.about-image:after {
+    content: "VG CONSULTANCY";
+    position: absolute;
+    bottom: 25px;
+    color: rgba(255,255,255,.4);
+    letter-spacing: 5px;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.about-content .tag {
+    color: var(--bronze);
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: 800;
+}
+
+.about-content h2 {
+    font-size: clamp(29px,4vw,42px);
+    line-height: 1.3;
+    margin: 20px 0;
+}
+
+.about-content h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.about-content p {
+    color: #777;
+    line-height: 1.9;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.about-content a {
+    display: inline-block;
+    margin-top: 12px;
+    background: var(--gradient);
+    color: #171717;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+/* STATS */
+
+.stats {
+    background: linear-gradient(120deg,#101923,#26394d);
+    padding: 65px 0;
+    color: white;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    gap: 20px;
+}
+
+.stat h2 {
+    font-size: 42px;
+    color: var(--gold);
+    margin-bottom: 12px;
+}
+
+.stat p {
+    font-size: 13px;
+    color: #ccc;
+}
+
+/* AWARD SECTION */
+
+.award {
+    padding: 90px 0;
+    text-align: center;
+    background: white;
+}
+
+.award-icon {
+    height: 85px;
+    width: 85px;
+    background: var(--gradient);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin: 0 auto 25px;
+    color: #202020;
+}
+
+.award h2 {
+    font-size: 35px;
+    margin-bottom: 18px;
+}
+
+.award p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.9;
+    color: #777;
+    font-size: 14px;
+}
+
+/* CTA */
+
+.cta {
+    padding: 75px 0;
+    background: #f6f6f5;
+}
+
+.cta-box {
+    background: linear-gradient(120deg,#101923,#26394d);
+    border-radius: 25px;
+    padding: 65px 25px;
+    text-align: center;
+    border: 1px solid rgba(221,162,85,.4);
+}
+
+.cta-box span {
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.cta-box h2 {
+    font-size: clamp(28px,4vw,43px);
+    color: white;
+    margin: 20px 0;
+}
+
+.cta-box p {
+    max-width: 700px;
+    margin: auto;
+    color: #c4cbd2;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.cta-box a {
+    display: inline-block;
+    margin-top: 28px;
+    background: var(--gradient);
+    color: #171717;
+    padding: 16px 32px;
+    border-radius: 35px;
+    font-weight: 800;
+}
+
+/* FOOTER */
+
+footer {
+    background: #101923;
+    color: #ddd;
+    padding: 65px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 35px;
+    padding-bottom: 40px;
+}
+
+.footer-col h3 {
+    color: white;
+    margin-bottom: 22px;
+    font-size: 16px;
+}
+
+.footer-col p {
+    font-size: 13px;
+    color: #aaa;
+    line-height: 1.9;
+}
+
+.footer-col ul { list-style: none; }
+
+.footer-col li { margin-bottom: 13px; }
+
+.footer-col li a {
+    color: #aaa;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.footer-col li a:hover { color: var(--gold); }
+
+.socials {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.socials a {
+    height: 37px;
+    width: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #26394d;
+    color: var(--gold);
+    border-radius: 50%;
+}
+
+.copyright {
+    border-top: 1px solid #34404d;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+    color: #999;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px) {
+    .nav-links { gap: 14px; }
+    .nav-links a { font-size: 11px; }
+    .service-grid { grid-template-columns: repeat(2,1fr); }
+    .footer-grid { grid-template-columns: repeat(2,1fr); }
+}
+
+@media(max-width:768px) {
+    .menu-btn { display: block; }
+
+    .nav-cta { display: none; }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 82px;
+        left: 0;
+        width: 100%;
+        background: #101923;
+        padding: 25px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links.show { display: flex; }
+
+    .hero-grid,
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero { text-align: center; }
+
+    .hero p { margin: auto; }
+
+    .hero-buttons { justify-content: center; }
+
+    .ai-visual { min-height: 350px; }
+
+    .why-grid { grid-template-columns: repeat(2,1fr); }
+
+    .stats-grid { grid-template-columns: repeat(2,1fr); row-gap: 40px; }
+}
+
+@media(max-width:550px) {
+    .service-grid,
+    .why-grid,
+    .footer-grid { grid-template-columns: 1fr; }
+
+    .hero { min-height: auto; }
+
+    .hero-grid { padding: 75px 0; }
+
+    .ai-core { height: 170px; width: 170px; }
+
+    .ai-core i { font-size: 70px; }
+
+    .ai-orbit { height: 240px; width: 240px; }
+
+    .float-one { left: -5px; }
+
+    .float-two { right: -5px; }
+
+    .services, .why { padding: 70px 0; }
+
+    .trust-inner { flex-direction: column; }
+
+    .about-image { min-height: 280px; }
+
+    .stat h2 { font-size: 34px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+<div class="container navbar">
+
+    <a href="#home" class="logo" aria-label="VG Consultancy home"><img src="data:image/png;base64,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" alt="VG Consultancy logo"></a>
+
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+        <a href="#home">Homepage</a>
+       <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link" href="service.html">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="mailto:info@vgconsultancy.com" class="nav-cta">Let's Talk →</a>
+
+</div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+<div class="container hero-grid">
+
+    <div>
+        <span class="hero-label">TECHNOLOGY • TALENT • INNOVATION</span>
+
+        <h1>
+            Transform Your Business With
+            <span>Technology & AI</span>
+        </h1>
+
+        <p>
+            VG Consultancy delivers intelligent technology,
+            recruitment and business solutions that help
+            organizations innovate, automate operations,
+            improve performance and achieve sustainable growth.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#services" class="btn-primary">Explore Services →</a>
+            <a href="#contact" class="btn-outline">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="ai-visual">
+        <div class="ai-orbit"></div>
+        <div class="ai-core">
+            <i class="fas fa-brain"></i>
+        </div>
+
+        <div class="ai-floating float-one">
+            <i class="fas fa-robot"></i> AI Innovation
+        </div>
+
+        <div class="ai-floating float-two">
+            <i class="fas fa-chart-line"></i> Smart Growth
+        </div>
+    </div>
+
+</div>
+</section>
+
+<!-- TRUST BAR -->
+
+<section class="trust-bar">
+<div class="container trust-inner">
+    <span><i class="fas fa-handshake"></i> YOUR SUCCESS IS OUR PRIORITY</span>
+    <span><i class="fas fa-lightbulb"></i> INNOVATIVE SOLUTIONS</span>
+    <span><i class="fas fa-rocket"></i> SCALABLE GROWTH</span>
+</div>
+</section>
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+<div class="container">
+
+    <div class="section-heading">
+        <span>WHAT WE DO</span>
+        <h2>Our <em>Services</em></h2>
+        <p>
+            Empowering businesses with innovative technology,
+            intelligent solutions and exceptional talent.
+        </p>
+    </div>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <span class="number">01</span>
+            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>IT Consulting & Digital Transformation</h3>
+            <p>We help businesses modernize their technology, improve operational efficiency, and align IT strategies with business goals. Our expertise enables smarter decisions, scalable growth, and long-term digital success.</p>
+            <a href="index.html">Discover More →</a>
+        </div>
+
+        <div class="service-card">
+            <span class="number">02</span>
+            <div class="service-icon"><i class="fas fa-users"></i></div>
+            <h3>Recruitment & Staffing Solutions</h3>
+            <p>We connect businesses with highly skilled professionals across IT and non-IT industries. From permanent hiring to contract staffing, we deliver the right talent to meet your business needs quickly and efficiently.</p>
+            <a href="index.html">Discover More →</a>
+        </div>
+
+        <div class="service-card">
+            <span class="number">03</span>
+            <div class="service-icon"><i class="fas fa-robot"></i></div>
+            <h3>AI Solutions & Intelligent Automation</h3>
+            <p>We leverage AI, intelligent agents, and automation to streamline business processes and improve productivity. Our smart solutions reduce manual work, enhance decision-making, and help businesses operate faster.</p>
+            <a href="index.html">Discover More →</a>
+        </div>
+
+        <div class="service-card">
+            <span class="number">04</span>
+            <div class="service-icon"><i class="fas fa-code"></i></div>
+            <h3>Software Development & Web Solutions</h3>
+            <p>We build modern websites, custom software, SaaS platforms, and web applications tailored to your business requirements. Our solutions focus on performance, security, user experience, and scalability.</p>
+            <a href="index.html">Discover More →</a>
+        </div>
+
+        <div class="service-card">
+            <span class="number">05</span>
+            <div class="service-icon"><i class="fas fa-chart-pie"></i></div>
+            <h3>CRM, ERP & Business Solutions</h3>
+            <p>We implement smart business management solutions that simplify operations, customer management, and reporting. From CRM and ERP systems to workflow integrations, we help businesses operate more effectively.</p>
+            <a href="index.html">Discover More →</a>
+        </div>
+
+        <div class="service-card">
+            <span class="number">06</span>
+            <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+            <h3>Project Outsourcing & EDC Services</h3>
+            <p>We provide flexible project outsourcing, dedicated teams, and skilled professionals to support business operations and technology initiatives. Our delivery models help companies scale efficiently.</p>
+            <a href="index.html">Discover More →</a>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+<div class="container about-grid">
+
+    <div class="about-image">
+        <i class="fas fa-building"></i>
+    </div>
+
+    <div class="about-content">
+        <span class="tag">ABOUT VG CONSULTANCY</span>
+
+        <h2>Built for Performance. <span>Designed for Growth.</span></h2>
+
+        <p>
+            VG Consultancy delivers innovative business solutions
+            designed to drive growth, efficiency, and long-term
+            success. With expertise in technology, talent and
+            strategic execution, we help businesses move forward
+            with confidence.
+        </p>
+
+        <p>
+            We work with companies across India and global markets,
+            helping them navigate change, improve efficiency,
+            and build future-ready capabilities.
+        </p>
+
+        <a href="about.html">Discover Our Story →</a>
+    </div>
+
+</div>
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section class="why">
+<div class="container">
+
+    <div class="section-heading">
+        <span>YOUR SUCCESS IS OUR PRIORITY</span>
+        <h2>Why Choose <em>VG Consultancy?</em></h2>
+        <p>Built on expertise, innovation, reliability and a commitment to business success.</p>
+    </div>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <i class="fas fa-bullseye"></i>
+            <h3>Tailored Solutions</h3>
+            <p>Every business has unique goals and challenges. We customize our services to match your operational, hiring, and technology requirements.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fas fa-briefcase"></i>
+            <h3>Industry Expertise</h3>
+            <p>We serve a wide range of industries and understand the specific demands, compliance needs, and talent requirements of each sector.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fas fa-microchip"></i>
+            <h3>Technology-Driven Approach</h3>
+            <p>We leverage modern tools, analytics, and AI-powered processes to improve decision-making and deliver smarter business outcomes.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fas fa-expand-arrows-alt"></i>
+            <h3>Scalable Delivery Model</h3>
+            <p>From one-time hiring support to long-term outsourcing and consulting partnerships, our services are built to scale with your business.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Trusted Execution</h3>
+            <p>We focus on reliability, confidentiality, quality, and measurable outcomes—helping our clients move forward with confidence.</p>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- STATISTICS -->
+
+<section class="stats">
+<div class="container stats-grid">
+
+    <div class="stat">
+        <h2>150+</h2>
+        <p>Happy Clients</p>
+    </div>
+
+    <div class="stat">
+        <h2>130+</h2>
+        <p>Projects Completed</p>
+    </div>
+
+    <div class="stat">
+        <h2>99%</h2>
+        <p>Positive Feedback</p>
+    </div>
+
+    <div class="stat">
+        <h2>250+</h2>
+        <p>Cups of Coffee</p>
+    </div>
+
+</div>
+</section>
+
+<!-- AWARD -->
+
+<section class="award">
+<div class="container">
+
+    <div class="award-icon">
+        <i class="fas fa-award"></i>
+    </div>
+
+    <div class="section-heading">
+        <span>EXCELLENCE IN EVERY PROJECT</span>
+        <h2>Award-Winning <em>Agency</em></h2>
+    </div>
+
+    <p>
+        VG Consultancy delivers innovative business solutions
+        designed to drive growth, efficiency, and long-term success.
+        With expertise in technology, talent, and strategic execution,
+        we help businesses move forward with confidence.
+    </p>
+
+</div>
+</section>
+
+<!-- CTA -->
+
+<section class="cta" id="contact">
+<div class="container">
+
+    <div class="cta-box">
+        <span>LET'S BUILD THE FUTURE</span>
+
+        <h2>Let's Create Something Together</h2>
+
+        <p>
+            From talent and technology to security and outsourcing,
+            we deliver the expertise your business needs to move
+            forward with confidence.
+        </p>
+
+        <a href="mailto:info@v-gconsultancy.com">
+            Let's Talk <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+<div class="container">
+
+    <div class="footer-grid">
+
+        <div class="footer-col">
+            <a href="#home" class="logo" aria-label="VG Consultancy home"><img src="data:image/png;base64,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" alt="VG Consultancy logo"></a>
+
+            <p style="margin-top:18px;">
+                Technology, talent and intelligent business
+                solutions for a smarter and more successful future.
+            </p>
+
+            <div class="socials">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>Our Services</h3>
+            <ul>
+                <li><a href="index.html">IT Consulting</a></li>
+                <li><a href="index.html">Recruitment Solutions</a></li>
+                <li><a href="index.html">AI-Based Staffing</a></li>
+                <li><a href="index.html">Cybersecurity Services</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="index.html">Blogs</a></li>
+                <li><a href="index.html">404</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Connect With Us</h3>
+            <ul>
+                <li><a href="mailto:info@vgconsultancy.com">info@vgconsultancy.com</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#portfolio">Our Portfolio</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 VG Consultancy. All Rights Reserved.
+        | Technology • Talent • Innovation
+    </div>
+
+</div>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+}
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        document.getElementById("navLinks").classList.remove("show");
+    });
+});
+</script>
+
+</body>
+</html>
