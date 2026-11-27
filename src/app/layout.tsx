@@ -65,7 +65,7 @@ const organizationSchema = {
   url: SITE_URL,
   logo: `${SITE_URL}/images/logo.png`,
   foundingDate: "2016",
-  email: "info@vgconsultancy.com",
+  email: "info@v-gconsultancy.com",
   description:
     "An AI-enabled technology and digital engineering partner helping businesses innovate, modernize and scale.",
   slogan: "Engineering Intelligence. Enabling Growth.",

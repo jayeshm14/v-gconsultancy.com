@@ -5,8 +5,8 @@ Copy `.env.example` to `.env.local` for local development or configure the varia
 | Variable | Required | Scope | Description |
 |----------|----------|-------|-------------|
 | `NEXT_PUBLIC_SITE_URL` | Yes (Prod) | Public | Canonical base URL (`https://v-gconsultancy.com`). |
-| `NEXT_PUBLIC_CONTACT_EMAIL` | Optional | Public | Displayed primary email (`info@vgconsultancy.com`). |
-| `CONTACT_RECIPIENT_EMAIL` | Recommended | Server | Destination inbox receiving form notifications (`info@vgconsultancy.com`). |
+| `NEXT_PUBLIC_CONTACT_EMAIL` | Optional | Public | Displayed primary email (`info@v-gconsultancy.com`). |
+| `CONTACT_RECIPIENT_EMAIL` | Recommended | Server | Destination inbox receiving form notifications (`info@v-gconsultancy.com`). |
 | `RESEND_API_KEY` | Optional* | Server Secret | API key from Resend (`resend.com`) for transactional email delivery from `/api/contact/`, `/api/consultation/`, and `/api/careers/`. |
 | `RESEND_FROM_EMAIL` | Optional | Server | Verified sender address for Resend (e.g., `VG Consultancy <noreply@v-gconsultancy.com>`). |
 | `FORM_WEBHOOK_URL` | Optional* | Server Secret | HTTPS webhook endpoint (CRM, Slack, n8n, Zapier) receiving validated JSON form payloads. |

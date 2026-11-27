@@ -7,7 +7,7 @@
    - Domain: `https://v-gconsultancy.com/`
    - Established: `2016`
    - Geographic presence: `India and global markets` (verified from live `index.html`)
-   - Contact email: `info@vgconsultancy.com` (and `info@v-gconsultancy.com`)
+   - Contact email: `info@v-gconsultancy.com`
    - Core capabilities: AI & automation, software engineering, web & e-commerce, SaaS, CRM/ERP, cloud & legacy modernization, IT consulting, recruitment/staffing, project outsourcing & dedicated teams.
 2. **Prohibited Fabrications:**
    - Zero client names, client logos, testimonials, or star ratings.

@@ -23,8 +23,8 @@ export function Footer() {
                 height={28}
                 className="h-8 w-auto object-contain"
               />
-              <span className="font-display font-extrabold text-white tracking-tight text-lg">
-                VG <span className="text-brand-gold">Consultancy</span>
+              <span className="font-display font-extrabold text-brand-gold tracking-tight text-lg">
+                Consultancy
               </span>
             </Link>
             <p className="text-brand-gold text-xs font-bold uppercase tracking-wider mb-3">

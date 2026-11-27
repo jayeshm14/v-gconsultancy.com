@@ -18,7 +18,7 @@
 
 | Schema Type | Applied On | Key Verified Properties |
 |-------------|------------|-------------------------|
-| `Organization` | Global (`layout.tsx`) | `name: "VG Consultancy"`, `url`, `foundingDate: "2016"`, `email: "info@vgconsultancy.com"`, `logo` |
+| `Organization` | Global (`layout.tsx`) | `name: "VG Consultancy"`, `url`, `foundingDate: "2016"`, `email: "info@v-gconsultancy.com"`, `logo` |
 | `WebSite` | Global (`layout.tsx`) | `name`, `url`, `publisher` |
 | `Service` | `/services/[slug]/` | `name`, `description`, `provider` (`VG Consultancy`), `serviceType` |
 | `BreadcrumbList` | All subpages | Ordered `ListItem` trail matching visible breadcrumbs |

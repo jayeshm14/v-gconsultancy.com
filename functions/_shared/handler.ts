@@ -38,7 +38,7 @@ export async function handlePagesFormRequest(
     }
 
     const referenceId = `VG-${kind.slice(0, 3).toUpperCase()}-${Date.now().toString(36).toUpperCase()}`;
-    const recipient = env.CONTACT_RECIPIENT_EMAIL || "info@vgconsultancy.com";
+    const recipient = env.CONTACT_RECIPIENT_EMAIL || "info@v-gconsultancy.com";
 
     if (env.RESEND_API_KEY) {
       const res = await fetch("https://api.resend.com/emails", {

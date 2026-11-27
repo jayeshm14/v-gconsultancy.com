@@ -73,8 +73,8 @@ export function Navbar() {
               height={30}
               className="h-9 w-auto object-contain"
             />
-            <span className="font-display font-extrabold text-white tracking-tight text-base sm:text-lg whitespace-nowrap">
-              VG <span className="text-brand-gold">Consultancy</span>
+            <span className="font-display font-extrabold text-brand-gold tracking-tight text-base sm:text-lg whitespace-nowrap">
+              Consultancy
             </span>
           </Link>
 

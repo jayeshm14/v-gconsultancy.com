@@ -52,7 +52,7 @@
 
 ## 2. FOOTER ARCHITECTURE (5 COLUMNS + LEGAL BAR)
 
-1. **Brand Summary:** Preserved logo, established 2016 statement, positioning summary, verified email (`info@vgconsultancy.com`).
+1. **Brand Summary:** Preserved logo, established 2016 statement, positioning summary, verified email (`info@v-gconsultancy.com`).
 2. **Services:** Key engineering, AI, cloud, consulting, and talent services.
 3. **Solutions:** All 6 solution tracks.
 4. **Industries:** All 6 target industry verticals.

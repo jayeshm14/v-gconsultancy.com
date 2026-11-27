@@ -6,7 +6,7 @@
  * - Domain: https://v-gconsultancy.com
  * - Established: 2016
  * - Geographic markets: India and global markets (verified from live index.html)
- * - Contact email: info@vgconsultancy.com (and info@v-gconsultancy.com)
+ * - Contact email: info@v-gconsultancy.com
  *
  * Content integrity rules:
  * - Zero fabricated client names, logos, testimonials, awards, metrics, or milestone years.
@@ -20,7 +20,7 @@ export const siteConfig = {
   tagline: "Engineering Intelligence. Enabling Growth.",
   positioning:
     "An AI-enabled technology and digital engineering partner helping businesses innovate, modernize and scale.",
-  email: "info@vgconsultancy.com",
+  email: "info@v-gconsultancy.com",
   altEmail: "info@v-gconsultancy.com",
   description:
     "VG Consultancy helps organizations transform business operations through intelligent technology, software engineering, AI-powered automation and enterprise solutions.",

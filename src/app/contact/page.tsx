@@ -56,9 +56,6 @@ export default function ContactPage() {
                     >
                       {siteConfig.email}
                     </a>
-                    <p className="text-xs text-brand-muted mt-1">
-                      Also reachable via {siteConfig.altEmail}
-                    </p>
                   </div>
                 </div>
 

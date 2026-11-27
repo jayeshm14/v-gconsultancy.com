@@ -48,7 +48,7 @@ export async function dispatchSubmission(
   payload: Record<string, unknown>
 ): Promise<SubmissionDeliveryResult> {
   const referenceId = `VG-${kind.slice(0, 3).toUpperCase()}-${Date.now().toString(36).toUpperCase()}`;
-  const recipient = process.env.CONTACT_RECIPIENT_EMAIL || "info@vgconsultancy.com";
+  const recipient = process.env.CONTACT_RECIPIENT_EMAIL || "info@v-gconsultancy.com";
 
   // 1. Resend API integration (when RESEND_API_KEY is configured)
   if (process.env.RESEND_API_KEY) {

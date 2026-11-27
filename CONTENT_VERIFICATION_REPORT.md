@@ -14,7 +14,7 @@
 | Established Year: `2016` | Prompt & brand record | Verified & preserved |
 | Geographic Scope: India and global markets | `mirror/index.html` | Verified & preserved |
 | Primary Logo (`public/images/logo.png`) | Extracted from `mirror/index.html` inline PNG | Verified & preserved |
-| Contact Email: `info@vgconsultancy.com` (and `info@v-gconsultancy.com`) | `mirror/index.html`, `mirror/service.html` | Verified & preserved |
+| Contact Email: `info@v-gconsultancy.com` | `mirror/index.html` | Verified & preserved |
 | Core Services (IT Consulting, Recruitment & Staffing, AI Solutions, Software & Web, CRM/ERP, Project Outsourcing) | `mirror/index.html`, `mirror/service.html` | Verified & expanded into 14 dedicated pages |
 | Mission, Vision & Core Values | `mirror/about.html` | Verified & preserved |
 
